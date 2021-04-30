@@ -1,0 +1,26 @@
+.btn{
+    top: 1.5vw;
+    border: 3px solid white;
+    text-align: center;
+    border-radius: 5vw 5vw;
+    text-decoration: none;
+    color: white;
+    padding: .7vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#btn1, #btn2{
+    display: inline-block;
+}
+#btn1{
+    position: relative;
+    top: .5vw;
+    left: 1vw;
+}
+#btn2{
+    position: relative;
+    float: right;
+    top: 2vw;
+    right: 4vw;
+}
+
+

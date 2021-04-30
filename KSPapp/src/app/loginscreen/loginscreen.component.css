@@ -1,0 +1,10 @@
+.titlepicture{
+    width: 100vw;
+    height: auto;
+}
+#banner{
+    width: 100vw;
+    height: 100px;
+    position: absolute;
+    top: 0;
+}
