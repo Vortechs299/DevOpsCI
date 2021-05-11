@@ -7,7 +7,7 @@ pipeline {
         
     stage('Cloning Git') {
       steps {
-        git 'https://github.com/Vortechs299/DevOpsCI'
+        git 'https://github.com/Vortechs299/DevOpsCI.git'
       }
     }
         
