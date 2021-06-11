@@ -1,0 +1,49 @@
+- hosts: localhost
+  tasks:
+  - name: Check if docker is installed
+    become: true
+    command: docker --version
+    register: docker_check
+
+  - name: if docker is not installed
+    ignore_errors: True
+    become: true
+    command: sudo apt-get -y install docker.io
+    when: docker_check.stdout.find('not found') != -1
+
+  - name: check if jenkins container exists
+    become: true
+    command: sudo docker ps -a --no-trunc --filter name=DevOpsCICD
+    register: container_check
+
+#  - name: if container does not exist
+#    command: create & config jenkins container
+#    become: true
+#    when: container_check.stdout.find('DevOpsCICD') != -1
+
+  - name: pull from git
+    become: true
+    git:
+      repo: https://github.com/Vortechs299/DevOpsCI.git
+      dest: /home/gyropyro/Desktop/DevOpsCI
+      update: yes
+      version: master
+
+  - name: start Node server
+    command: node server.js
+#  - name: open browser on localhost:3001
+#    command: 
+    
+  
+
+
+
+# https://stackoverflow.com/questions/56181443/how-can-i-run-angular-app-on-node-server
+# https://stackoverflow.com/questions/19369931/ansible-how-to-change-active-directory-in-ansible-playbook
+# https://phoenixnap.com/kb/ansible-check-if-file-exists
+# https://stackoverflow.com/questions/21892603/how-to-make-ansible-execute-a-shell-script-if-a-package-is-not-installed
+# https://www.youtube.com/watch?v=lqEnooL0BkI
+# https://www.youtube.com/watch?v=TWcFAi6rvlc&ab_channel=PrakashSinghRajpurohitPrakashSinghRajpurohit
+# https://www.youtube.com/watch?v=yT8QFKqcSBg&ab_channel=Thetips4youThetips4you
+# https://www.youtube.com/watch?v=Po9jQS7WBDQ&ab_channel=JulioCasalJulioCasal
+
