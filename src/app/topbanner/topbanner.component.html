@@ -1,7 +1,6 @@
 <div id="btn1"><a class="btn" id="btn1" href="https://www.kerbalspaceprogram.com/" type="button">&nbsp;&nbsp;&nbsp;&nbsp;LEARN MORE&nbsp;&nbsp;&nbsp;&nbsp;</a></div>
-<div id="btn2"><a class="btn" routerLink="/menu" id="id">&nbsp;&nbsp;&nbsp;&nbsp;LOGIN&nbsp;&nbsp;&nbsp;&nbsp;</a></div>  
-
-
-
-
-
+<div id="btn1"><a class="btn" id="btn1" routerLink="/spacenews">&nbsp;&nbsp;&nbsp;Spacenews&nbsp;&nbsp;&nbsp;</a></div>
+<div id="btn2"><a class="btn" routerLink="/login" (click)="ResetPages()" *ngIf="auth">&nbsp;&nbsp;&nbsp;&nbsp;MENU&nbsp;&nbsp;&nbsp;&nbsp;</a></div>
+<div id="btn2"><a class="btn" routerLink="/login">&nbsp;&nbsp;&nbsp;&nbsp;LOGIN&nbsp;&nbsp;&nbsp;&nbsp;</a></div>
+<div id="btn2"><a class="btn" routerLink="/menu" *ngIf="auth">&nbsp;&nbsp;&nbsp;Edit Bodies&nbsp;&nbsp;&nbsp;</a></div>
+<a routerLink="/login" id="id"></a>

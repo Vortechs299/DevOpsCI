@@ -1,0 +1,9 @@
+<div id="bodybanner">
+    <div *ngFor= "let selectable of SelectableImages; let i = index">
+        <button (click)="SetStatsPageContent(i)" routerLink="/statspage">
+            <img src={{selectable}} id="selectimage">
+            <div>{{GetSelectableName(i)}}</div>
+        </button>
+        
+    </div>
+</div>

@@ -1,0 +1,236 @@
+#bannerback{
+    background-color: rgb(0, 1, 44);
+    height: 5.2vw;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+}
+#background{
+    position: relative;
+    width: 100%;
+    height: 100vw;
+    background-image: url("../../assets/images/universe.jpg");
+    background-repeat: no-repeat;
+}
+#planetselect{
+    position: relative;
+    top: 2vw;
+}
+#celestialbannerwrap{
+    background-color: black;
+    padding-bottom: 2vw;
+}
+#divider{
+    background-color: rgb(170, 0, 0);
+    width: 100%;
+    height: .3vw;
+}
+#blockLeft, #blockMiddle, #blockRight{
+    border-radius: .7vw;
+    position: relative;
+    top: 2vw;
+}
+#blockLeft{
+    float: left;
+    width: 27.3%;
+    margin-left: 1%;
+    margin-bottom: 1vw;
+    border: .3vw solid darkblue;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2vw;
+    height: 40vw;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+#blockMiddle{
+    float: left;
+    width: 40%;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    margin-left: 1%;
+    margin-right: 1%;
+    height: 40vw;
+}
+#blockRight{
+    float: right;
+    width: 27.3%;
+    margin-bottom: 1vw;
+    margin-right: 1%;
+    border: .3vw solid darkblue;
+    background-color: white;
+    height: 42vw;
+    height: 40vw;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+#name{
+    height: 5vw;
+}
+#bodyimage{
+    height: 40vw;
+}
+#bodyimage img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.divtitle{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vw;
+    text-align: center;
+    color: darkblue;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    text-decoration: underline;
+}
+.BodyName{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3.5vw;
+    text-align: center;
+    color: white;
+}
+.divcontent1{
+    margin: .5vw;
+}
+
+#bodybanner{
+    position: relative;
+    width: 100vw;
+    height: 11.5vw;
+    top: 2vw;
+    display: flex;
+    justify-content: center;
+}
+#bodybanner div{
+    float: left;
+    height: 10vw;
+    width: 10vw;
+}
+button{
+    background-color: transparent;
+    border: none;
+}
+#selectimage{
+    height: 10vw;
+    width: 10vw;
+}
+button div{
+    color: white;
+    position: relative;
+    top: -1vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6vw;
+    
+}
+#table2, td, th {
+    border: 1px solid black;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1vw;
+    table-layout: fixed ;
+    width: 100% ;
+}
+#tabletitle1{
+    background-color: darkblue;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+th{
+    padding: .3vw;
+    text-align: left;
+    width: 50%;
+}
+#logo{
+    position: absolute;
+    top: 0;
+    left: 42vw;
+    width: 16%;
+    height: 5vw;
+    background-color:white;
+}
+#logo img{
+    width: 100%;
+    height: 100%;
+
+}
+#maps{
+    width: 47.5%;
+    margin-left: 1%;
+    position: relative;
+    height: 25vw;
+    top: 50vw;
+}
+#pic{
+    position: relative;
+    width: 100%;
+    height: auto;
+    top: -41vw;
+    border: .3vw solid darkblue;
+    border-radius: .7vw;
+    overflow-y:hidden;
+}
+#anom{
+    position: relative;
+    background-color: white;
+    width: 48.5%;
+    height: 23.5vw;
+    border: .3vw solid darkblue;
+    border-radius: .7vw;
+    left: 50vw;
+    top: 26vw;
+}
+#ng_anom{
+    position: relative;
+    top: -30vw;
+    width: 100%;
+    font-size: 1.2vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#h22{
+    position: relative;
+    top: -1vw;
+    left: 5vw;
+    font-size: 2vw;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+#anom1, #anom2, #anom3{
+    position: relative;
+    width: 20vw;
+    height: 1.5vw;
+    
+    padding: 1vw;
+}
+#anom4{
+    position: relative;
+    width: 46vw;
+    height: 10vw;
+    left: 1vw;
+}
+#anom5{
+    position: relative;
+    width: 23vw;
+    height: 11vw;
+    top: -18vw;
+    left: 24vw;
+}
+#wrapper{
+    width: 100%;
+    height: 23.5vw;
+    overflow: scroll;
+    position: relative;
+    top: -17vw;
+    border-radius: .7vw;
+    overflow-x: hidden;
+}
+#anom5 img{
+    width: 100%;
+    height: 15vw;
+    position: relative;
+    top: -9vw;
+    left: 1vw;
+}

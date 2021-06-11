@@ -1,0 +1,13 @@
+<div id="bannerback"></div>
+<app-topbanner></app-topbanner>
+<div id="logo"><img src="assets/images/ksp.png"></div>
+<div id="divider"></div>
+<div id="hubble">
+    <h2>{{hubbledata[0].name}}</h2>
+    <div id="desc">{{hubbledata[0].description}}</div>
+    <div id="image"><img src="{{hubbledata[0].image_files[4].file_url}}"></div>
+</div>
+<div id="terminology" *ngFor= "let term of termitems;">
+    <h2>{{term.name}}</h2>
+    <div>{{term.definition}}</div>
+</div>

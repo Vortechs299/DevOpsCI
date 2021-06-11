@@ -1,6 +1,13 @@
 <img src="assets/images/kerbals.jpg" class="titlepicture">
-<div id="banner">
+<div id="banneroverlay">
     <app-topbanner></app-topbanner>
+    <div id="title"><img src="assets/images/kspimg.png" id="ksp"><div id="wiki">WIKI</div></div>
+    <div id="celestialbannerwrap" *ngIf="auth">
+        <app-celestialbodyselect></app-celestialbodyselect>
+    </div>
+    
 </div>
+
+
 
 

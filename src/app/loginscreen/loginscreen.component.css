@@ -2,9 +2,34 @@
     width: 100vw;
     height: auto;
 }
-#banner{
+#banneroverlay{
     width: 100vw;
     height: 100px;
     position: absolute;
     top: 0;
+}
+app-celestialbodyselect{
+    position: absolute;
+    left: 0;
+    top: 44vw;
+}
+#title{
+    position: relative;
+    color: white;
+    font-size: 5vw;
+    top: 0vw;
+    left: 30vw;
+}
+#ksp{
+    width: 40vw;
+}
+#wiki{
+    color: rgb(214, 0, 0);
+    font-family: Arial;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 7vw;
+    position: relative;
+    left: 40vw;
+    top: -8vw;
 }

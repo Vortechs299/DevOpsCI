@@ -1,1 +1,25 @@
-<p>menu works!</p>
+<div id="bannerback"></div>
+<app-topbanner></app-topbanner>
+<div id="logo"><img src="assets/images/ksp.png"></div>
+<div id="divider"></div>
+<div id="mainwrap" *ngIf="auth">
+    <form>
+        <select (change)="UpdateView($event.target.value)" id="operation" name="body">
+            <option value="DELETE">Delete</option>
+            <option value="POST">Post</option>
+            <option value="PUT">Put</option>
+          </select>
+        <select (change)="UpdateView($event.target.value)" id="operation" name="body">
+          <option value="stars">Star</option>
+          <option value="planets">Planet</option>
+          <option value="moons">Moon</option>
+          <option value="anomalies">Anomaly</option>
+        </select>
+        <input type="number" id="send" name="iden" placeholder="Id" [(ngModel)]="ID">
+        <input type="submit" (click)="ExecuteOperation()" value="Submit">
+        <div id="textfield" *ngIf="showPOSTfrom">
+          <textarea [(ngModel)]="item" id="textbox" name="textbox" rows="40" cols="50">{{item}}</textarea>
+        </div>
+        <textarea id="textbox" name="response" rows="20" cols="50">{{response}}</textarea>
+    </form>
+</div>

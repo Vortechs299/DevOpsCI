@@ -1,1 +1,57 @@
-<p>statspage works!</p>
+<div id="bannerback"></div>
+<app-topbanner></app-topbanner>
+<div id="logo"><img src="assets/images/ksp.png"></div>
+<div id="celestialbannerwrap" *ngIf="auth">
+    <app-celestialbodyselect id="planetselect"></app-celestialbodyselect>
+</div>
+<div id="divider"></div>
+<div id="background">
+    <div id="blockLeft">
+        <div class="divtitle">DESCRIPTION</div>
+        <div class="divcontent1">{{items.description}}</div>
+    </div>
+    <div id="blockMiddle">
+        <div class="BodyName">{{items.name}}</div>
+        <div id="bodyimage"><img src={{items.imageURLs[0].url}}></div>
+    </div>
+    <div id="blockRight">
+        <div class="divtitle">CHARACTERISTICS</div>
+        <div class="divcontent">
+            <table id="t1">
+                <tr id="tabletitle1">
+                    <th>property</th>
+                    <th>value (SI unit)</th>
+                </tr>
+            </table>
+            <table *ngFor= "let property of CelestialObject;" id="t2">
+                <tr id="tabletitle">
+                    <th>{{property[0]}}</th>
+                    <th>{{property[1]}}</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div id="maps">
+        <img id="pic" src="{{items.imageURLs[1].url}}">    <!--regular map only-->
+    </div>
+    <div  id="anom">
+        <div id="wrapper">
+            <h2 id="h22">Anomalies</h2>
+            <div *ngFor= "let anomaly of anomalies;" id="ng_anom">
+                <div id="anom1">Name: {{anomaly.name}}</div>
+                <div id="anom2">Coördinates: {{anomaly.anomalyLocations[0].coordinates}}</div>
+                <div id="anom3">Description:</div>
+                <div id="anom4">{{anomaly.description}}</div>
+                <div id="anom5"><img src="{{anomaly.anomalyImageURLs[0].url}}"></div>
+            </div>
+        </div>
+            
+        
+    </div>
+    
+</div>
+
+
+<!--ngfor anomaly-->
+
+
